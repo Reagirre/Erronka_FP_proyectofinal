@@ -1,0 +1,232 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login {
+    margin: 20px auto;
+    /* Alinea el formulario al centro horizontalmente */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#admin-nav {
+    margin: 20px auto;
+    /* Alinea el formulario al centro horizontalmente */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.admin-ezabatu {
+    margin: 20px auto;
+    /* Alinea el formulario al centro horizontalmente */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+form {
+    margin: 20px auto;
+    /* Alinea el formulario al centro horizontalmente */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+table {
+    margin: 20px auto;
+    /* Alinea el formulario al centro horizontalmente */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 12px;
+    border: 1px solid #8b8b8b;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e6f7ff;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p a {
+    text-decoration: none;
+    /* Elimina el subrayado predeterminado del enlace */
+    color: #3498db;
+    /* Color del enlace */
+    font-weight: bold;
+    /* Hace que el texto sea más audaz */
+    transition: color 0.3s ease;
+    /* Agrega una transición suave al cambio de color */
+}
+
+p a:hover {
+    color: #2980b9;
+    /* Cambia el color al pasar el mouse sobre el enlace */
+}
+
+/* p::after {
+    content: " > ";
+    color: #95a5a6; 
+    margin-left: 5px; 
+} */
+
+p a:last-child::after {
+    content: "";
+    /* No muestra el símbolo ">" después del último enlace */
+}
+
+.kotxeak-admin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+}
+
+section {
+    text-align: center;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-info {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.coment-info {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.category-info {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.lista-boton {
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.aldatu-boton {
+    background-color: #3498db;
+}
+
+.ezabatu-boton {
+    background-color: #e74c3c;
+}
+
+#sesioItxi-boton {
+    position: absolute;
+    top: 23px;
+    right: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    /* width: max-content; */
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #dc3545;
+}
+
+#sesioItxi-boton:hover {
+    background-color: #c82333;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}

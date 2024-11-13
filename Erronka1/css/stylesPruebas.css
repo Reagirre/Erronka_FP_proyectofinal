@@ -1,0 +1,368 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #333; /* Cambia el color de fondo según tu diseño */
+    color: #fff; /* Cambia el color de texto según tu diseño */
+    padding: 10px; /* Añade relleno al pie de página según tus necesidades */
+}
+
+
+:root {
+    --principal: #d8d8d8;
+    --oscuro: #212121;
+    --primary: #ff6207e3;
+    --secondary: #0070A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+}
+
+
+.bloque-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    margin: 50px 70px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 5px 5px 5px #c2c2c2;
+}
+
+.div-logo {
+    width: 150px;
+    cursor: pointer;
+}
+.div-logo img {
+    width: 100%;
+}
+
+.navegador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navegador a {
+    display: block;
+    text-align: center;
+    color: var(--oscuro);
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 20px 15px 20px 15px;
+    border-radius: 10px;
+}
+
+.navegador a:hover {
+    background-color: var(--oscuro);
+    color: white;
+}
+.nav-burger {
+    display: none;
+}
+
+.usuario {
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.usuario:hover{
+    background-color: rgb(244, 244, 244);
+    cursor: pointer;
+}
+.perfil {
+    fill: var(--oscuro);
+}
+
+.carrito {
+    padding: 15px;
+    border-radius: 10px;
+
+}
+.carrito:hover{
+    background-color: rgb(244, 244, 244);
+    cursor: pointer;
+}
+.cart2 {
+    fill: var(--oscuro);
+}
+
+/************************ DROPDOWN CONTAINER ************************/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: var(--blanco);
+    text-align: center;
+    color: var(--oscuro);
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 20px 15px 20px 15px;
+    border-radius: 10px;
+    border: none;
+}
+.dropbtn:hover {
+    background-color: var(--oscuro);
+    color: var(--blanco);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+/* Dropdown content links */
+.dropdown-content a {
+    padding: 12px 16px;
+    font-size: small;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: var(--oscuro);
+    color: var(--blanco);
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/************************ DROPDOWN 2 CONTAINER ************************/
+
+.navegador2 {
+    padding: 10px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content-burger {
+    display: none;
+    position: absolute;
+    background-color: #6e6b6b;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+/* Dropdown content links */
+.dropdown-content-burger a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: var(--blanco);
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content-burger a:hover {
+    background-color: #5b5858;
+    color: var(--blanco);
+    border-radius: 5px;
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content-burger {
+    display: block;
+}
+
+
+@media (max-width: 880px) {
+    .navegador {
+        display: none;
+    }
+    .bloque-nav {
+        justify-content: space-around;
+    }
+    .nav-burger {
+        display: contents;
+    }
+    .burger-link {
+        color: var(--oscuro);
+    }
+
+}
+/*  */
+
+/* ***********************  MAIN ************************** */
+
+
+/*  */
+.main {
+    position: relative;
+    z-index: 0;
+    padding-bottom: 50px;
+}
+
+.bloque-noticias-ofertas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    /* justify-content: space-between;
+    align-items: center; */
+
+    margin: 50px 70px;
+    border-radius: 5px;
+    /* box-shadow: 5px 5px 5px #c2c2c2; */
+    /* background-color: #00acee; */
+}
+
+.one {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    border-radius: 10px;
+    /* Imagen background */
+    background-image: url(/img/tiposVehiculo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    text-align: center;
+}
+.one a {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.two {
+    grid-column: 2 / 4;
+    grid-row: 1 / 4;
+    border-radius: 10px;
+    /* Imagen background */
+    background-image: url(/img/km0.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+.two a {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.three {
+    grid-column: 1;
+    grid-row: 3 / 7;
+    border-radius: 10px;
+    /* Imagen background */
+    background-image: url(/img/cochesNuevos2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.three a {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.four {
+    grid-column: 2;
+    grid-row: 4 / 7;
+    border-radius: 10px;
+    /* Imagen background */
+    background-image: url(/img/renting.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.four a {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.five {
+    grid-column: 3;
+    grid-row: 4 / 7;
+    border-radius: 10px;
+    /* Imagen background */
+    background-image: url(/img/tiposVehiculo2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.five a {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+  }
+
+/*  */
+
+/* ***********************  FOOTER ************************** */
+
+
+/* .footer {
+    z-index: 1;
+    background-color: var(--principal);
+} */
+
+/* 
+.bloque-footer-titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+} */
+
+.icon-fac {
+    fill: #3B5998;
+}
+.icon-twi {
+    fill: #00acee;
+}
+.icon-ins {
+    /* fill: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #c13584, #e1306c, #fd1d1d); */
+    fill: var(--oscuro);
+}
+.icon-you {
+    fill: #bb0000;
+}
+.icon-tik {
+    fill: rgb(30, 48, 80);
+}
+.icon-lin {
+    fill: #0077B5;
+}

@@ -1,0 +1,18 @@
+# apache
+#    RewriteEngine On
+#    RewriteRule ^producto/([0-9]+)$ detalle.php?id=$1 [L]
+# Evitar la lista de directorios
+Options -Indexes
+
+# Ocultar información sobre la versión de Apache
+ServerSignature Off
+
+# Bloquear acceso a un archivo específico
+<Files "config.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+<IfModule mod_deflate.c>
+    # Habilitar compresión para ciertos tipos de archivos
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript
+</IfModule>

@@ -1,0 +1,18 @@
+{
+    "name": "Erronka",
+    "short_name": "Erronka",
+    "description": "Renting.net web horrialdea da, hemen kotxeen errenta bideratzen da",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "d8d8d8",
+    "theme_color": "white",
+    "icons": [
+      {
+        "src": "../img/logo.png",
+        "sizes": "329x103",
+        "type": "image/gif"
+      }
+    ],
+    "purpose": "any"
+  }
+  
